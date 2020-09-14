@@ -12,8 +12,6 @@ import AbastractState;
 import StateContext;
 import openfl.events.KeyboardEvent;
 
-
-
 class Main extends Sprite implements StateContext{
 
 	private var sprite:Sprite;

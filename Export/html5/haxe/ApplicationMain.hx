@@ -32,7 +32,7 @@ class ApplicationMain
 
 		ManifestResources.init(config);
 
-		app.meta["build"] = "50";
+		app.meta["build"] = "1";
 		app.meta["company"] = "OpenFL";
 		app.meta["file"] = "DisplayingABitmap";
 		app.meta["name"] = "Displaying a Bitmap";

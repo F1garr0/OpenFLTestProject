@@ -66,7 +66,7 @@ import sys.FileSystem;
 
 		#else
 
-		data = '{"name":null,"assets":"aoy4:pathy19:assets%2Fopenfl.pngy4:sizei11126y4:typey5:IMAGEy2:idR1y7:preloadtgh","rootPath":null,"version":2,"libraryArgs":[],"libraryType":null}';
+		data = '{"name":null,"assets":"aoy4:pathy18:assets%2Fmecha.pngy4:sizei526744y4:typey5:IMAGEy2:idR1y7:preloadtgoR0y19:assets%2Fopenfl.pngR2i11126R3R4R5R7R6tgh","rootPath":null,"version":2,"libraryArgs":[],"libraryType":null}';
 		manifest = AssetManifest.parse (data, rootPath);
 		library = AssetLibrary.fromManifest (manifest);
 		Assets.registerLibrary ("default", library);
@@ -94,12 +94,14 @@ null
 #if !display
 #if flash
 
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_mecha_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_openfl_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__manifest_default_json extends null { }
 
 
 #elseif (desktop || cpp)
 
+@:keep @:image("Assets/mecha.png") @:noCompletion #if display private #end class __ASSET__assets_mecha_png extends lime.graphics.Image {}
 @:keep @:image("Assets/openfl.png") @:noCompletion #if display private #end class __ASSET__assets_openfl_png extends lime.graphics.Image {}
 @:keep @:file("") @:noCompletion #if display private #end class __ASSET__manifest_default_json extends haxe.io.Bytes {}
 
